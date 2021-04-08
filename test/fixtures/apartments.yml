@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  apartment_id: 1
+  building_id: one
+  apartment_unit: MyText
+  apartment_price: 1
+  apartment_imgLocation: MyText
+
+two:
+  apartment_id: 1
+  building_id: two
+  apartment_unit: MyText
+  apartment_price: 1
+  apartment_imgLocation: MyText
