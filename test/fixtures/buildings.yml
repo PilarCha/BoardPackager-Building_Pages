@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  building_id: 1
+  building_name: MyText
+  building_city: MyText
+  building_address: MyText
+  building_description: MyText
+  building_imgLocation: MyText
+  building_moreInfo: MyText
+  pets_allowed: MyText
+  smoking_allowed: false
+  subletting_allowed: MyText
+  washer_dryer_allowed: false
+
+two:
+  building_id: 1
+  building_name: MyText
+  building_city: MyText
+  building_address: MyText
+  building_description: MyText
+  building_imgLocation: MyText
+  building_moreInfo: MyText
+  pets_allowed: MyText
+  smoking_allowed: false
+  subletting_allowed: MyText
+  washer_dryer_allowed: false
