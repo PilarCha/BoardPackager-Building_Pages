@@ -8,22 +8,22 @@ Things you may want to cover:
 * Ruby version
 
 * System dependencies
-  byebug
-  coffee-rails (~> 4.2)
-  jbuilder (~> 2.5)
-  jquery-rails
-  listen (~> 3.0.5)
-  materialize-sass
-  mysql2 (>= 0.3.18, < 0.6.0)
-  puma (~> 3.0)
-  rails (~> 5.0.7)
-  sass-rails (~> 5.0)
-  spring
-  spring-watcher-listen (~> 2.0.0)
-  turbolinks (~> 5)
-  tzinfo-data
-  uglifier (>= 1.3.0)
-  web-console (>= 3.3.0)
+  Markup: * byebug
+          * coffee-rails (4.2)
+          * jbuilder (2.5)
+          * jquery-rails
+          * listen (3.0.5)
+          * materialize-sass
+          * mysql2 ( 0.3.18, < 0.6.0)
+          * puma (3.0)
+          * rails (5.0.7)
+          * sass-rails (5.0)
+          * spring
+          * spring-watcher-listen (2.0.0)
+          * turbolinks (5)
+          * tzinfo-data
+          * uglifier (>= 1.3.0)
+          * web-console (>= 3.3.0)
 
 * Docker Commands
 Go into main directory and run
