@@ -1,7 +1,34 @@
-<h1>Building#index</h1>
 
-<%@AllBuildings.each do |building|%>
-<div class="ehhh">
-  <p>we out here <%building.building_description%></p>
-</div>
-<%end%>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper #ffffff grey lighten-5">
+        <a href="#" class="brand-logo center" style="height:50px;"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
+
+        <a href="#" ><i class="material-icons-outlined">menu</i></a>
+      </div>
+    </nav>
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
+      <a class="carousel-item" href="#two!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
+      <a class="carousel-item" href="#three!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
+      <a class="carousel-item" href="#four!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
+      <a class="carousel-item" href="#five!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
+    </div>
+
+  </body>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems, options);
+});
+
+
+  </script>
+</html>
