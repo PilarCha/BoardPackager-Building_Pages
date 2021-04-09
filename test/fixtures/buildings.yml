@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  building_id: 1
+  building_id: 
   building_name: MyText
   building_city: MyText
   building_address: MyText
@@ -14,7 +14,7 @@ one:
   washer_dryer_allowed: false
 
 two:
-  building_id: 1
+  building_id: 
   building_name: MyText
   building_city: MyText
   building_address: MyText

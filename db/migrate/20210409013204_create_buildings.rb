@@ -1,7 +1,7 @@
 class CreateBuildings < ActiveRecord::Migration[5.0]
   def change
     create_table :buildings do |t|
-      t.integer :building_id
+      t.primary_key :building_id
       t.text :building_name
       t.text :building_city
       t.text :building_address
