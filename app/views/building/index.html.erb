@@ -4,6 +4,11 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <title></title>
   </head>
   <body>
@@ -15,19 +20,28 @@
       </div>
     </nav>
     <div class="carousel">
-      <a class="carousel-item" href="#one!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
-      <a class="carousel-item" href="#two!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
-      <a class="carousel-item" href="#three!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
-      <a class="carousel-item" href="#four!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
-      <a class="carousel-item" href="#five!"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
+      <a class="carousel-item" href="#one!"><%= image_tag "Buildings/bigapt1.jpg"%></a>
+      <a class="carousel-item" href="#two!"><%= image_tag "Buildings/bigapt2.jpg" %></a>
+      <a class="carousel-item" href="#three!"><%= image_tag "Buildings/bigapt3.jpg"%></a>
+      <a class="carousel-item" href="#four!"><%= image_tag "Buildings/bigapt4.jpg"%></a>
     </div>
 
   </body>
   <script type="text/javascript">
+
+    var elem = $('.tabs')
+    var options = {}
+    var instance = M.Tabs.init(elem, options);
+    $(document).ready(function(){
+      $('.carousel').carousel({
+          full_width: true
+      });
+    });
     document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems, options);
-});
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems, options);
+    });
+
 
 
   </script>
