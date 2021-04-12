@@ -4,10 +4,8 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
    <!-- Compiled and minified JavaScript -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <title></title>
   </head>
@@ -19,31 +17,37 @@
         <a href="#" ><i class="material-icons-outlined">menu</i></a>
       </div>
     </nav>
-    <div class="carousel">
-      <a class="carousel-item" href="#one!"><%= image_tag "Buildings/bigapt1.jpg"%></a>
-      <a class="carousel-item" href="#two!"><%= image_tag "Buildings/bigapt2.jpg" %></a>
-      <a class="carousel-item" href="#three!"><%= image_tag "Buildings/bigapt3.jpg"%></a>
-      <a class="carousel-item" href="#four!"><%= image_tag "Buildings/bigapt4.jpg"%></a>
-    </div>
-    <hr class="line-break">
-    <h6>Rental Buildings</h6>
-  </body>
-  <script type="text/javascript">
+    <div class="main">
+    <section class="carousel">
+      <div class="carousel__image"> <%= image_tag "Buildings/bigapt1.jpg"%> </div>
+      <div class="carousel__image"> <%= image_tag "Buildings/bigapt2.jpg"%> </div>
+      <div class="carousel__image"> <%= image_tag "Buildings/bigapt3.jpg"%></div>
+      <div class="carousel__image"> <%= image_tag "Buildings/bigapt4.jpg"%> </div>
+    </section>
 
-    var elem = $('.tabs')
-    var options = {}
-    var instance = M.Tabs.init(elem, options);
-    $(document).ready(function(){
-      $('.carousel').carousel({
-          full_width: true
-      });
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.carousel');
-      var instances = M.Carousel.init(elems, options);
-    });
+    <hr class="line_break_top">
+    <h2>Rental Buildings</h2>
+    <section class = "apartment__cards">
+      <div class="apartment__card">
+        <div class="apartment__image">
+          <img src="./img/Apartments/bld1.jpeg" alt="">
+        </div>
+        <div class="apartment__content">
+          <div class="apartment__title">
+            <h2>One Sutton Place</h2>
+          </div>
+          <div class="apartment__city">
+            <h3>Sutton Place</h3>
+          </div>
+          <div class="apartment__button">
+            <button>See Apartments</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <hr class="line_break_bottom">
+  </div>
 
 
-
-  </script>
 </html>
