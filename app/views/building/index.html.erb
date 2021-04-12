@@ -19,10 +19,10 @@
     </nav>
     <div class="main">
     <section class="carousel">
-      <div class="carousel__image"> <%= image_tag "Buildings/bigapt1.jpg"%> </div>
-      <div class="carousel__image"> <%= image_tag "Buildings/bigapt2.jpg"%> </div>
-      <div class="carousel__image"> <%= image_tag "Buildings/bigapt3.jpg"%></div>
-      <div class="carousel__image"> <%= image_tag "Buildings/bigapt4.jpg"%> </div>
+      <% (1..4).each do |i| %>
+        <div class="carousel__image"> <%= image_tag "Buildings/bigapt#{i}.jpg"%> </div>  
+      <% end %>
+
     </section>
 
     <hr class="line_break_top">
