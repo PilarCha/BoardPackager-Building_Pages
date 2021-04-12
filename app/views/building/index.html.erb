@@ -3,20 +3,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <!-- Compiled and minified JavaScript -->
 
     <title></title>
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper #ffffff grey lighten-5">
-        <a href="#" class="brand-logo center" style="height:50px;"><%= image_tag "logo.png",:class => "nav-bar-image" %></a>
-
-        <a href="#" ><i class="material-icons-outlined">menu</i></a>
-      </div>
-    </nav>
+    <div class="nav">
+      <i style="font-size:42px" class="fa">&#xf0c9;</i>
+      <%= image_tag "logo.png",:class => "nav-bar-image" %>
+      <p>   </p>
+    </div>
     <div class="main">
     <section class="carousel">
       <% (1..4).each do |i| %>

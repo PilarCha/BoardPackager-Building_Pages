@@ -16,6 +16,17 @@ a, a:visited {
   text-decoration: none;
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar-image {
+  width:60px;
+  height:80px;
+}
+
 .main {
   height: 100vh;
   margin: 0;
