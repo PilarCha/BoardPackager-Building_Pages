@@ -20,7 +20,7 @@
     <div class="main">
     <section class="carousel">
       <% (1..4).each do |i| %>
-        <div class="carousel__image"> <%= image_tag "Buildings/bigapt#{i}.jpg"%> </div>  
+        <div class="carousel__image"> <%= image_tag "Buildings/bigapt#{i}.jpg"%> </div>
       <% end %>
 
     </section>
@@ -28,22 +28,27 @@
     <hr class="line_break_top">
     <h2>Rental Buildings</h2>
     <section class = "apartment__cards">
+
+      <% @buildings.each do |building| %>
+
       <div class="apartment__card">
         <div class="apartment__image">
-          <img src="./img/Apartments/bld1.jpeg" alt="">
+          <img src=<%= building.building_imgLocation %> alt="">
         </div>
         <div class="apartment__content">
           <div class="apartment__title">
-            <h2>One Sutton Place</h2>
+            <h2><%=building.building_name%></h2>
           </div>
           <div class="apartment__city">
-            <h3>Sutton Place</h3>
+            <h3><%=building.building_city%></h3>
           </div>
           <div class="apartment__button">
             <button>See Apartments</button>
           </div>
         </div>
       </div>
+
+      <% end %>
 
     </section>
     <hr class="line_break_bottom">
