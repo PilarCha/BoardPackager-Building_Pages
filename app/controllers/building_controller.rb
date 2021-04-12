@@ -1,5 +1,10 @@
 class BuildingController < ApplicationController
   def index
-    @buildings = Building.all
+    @Buildings = Building.all
+  end
+
+  def show
+    @Building = Building.find(params[:id])
+    @Apartments = Apartment.where("building_id = #{params[:id]}")
   end
 end
