@@ -96,6 +96,12 @@ h1 {
   row-gap:3.125rem;
 }
 
+@media(max-width: 1000px) {
+  .apartment__cards {
+    grid-template-columns: 1fr;
+    background-color: black;
+  }
+}
 .apartment__card {
   height:12.2rem;
   border: .5px solid black;
